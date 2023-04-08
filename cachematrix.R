@@ -40,4 +40,8 @@ cacheSolve <- function(x, ...) {
   x$invSetter(inversed)
   inversed
 }
+my_Matrix <- makeCacheMatrix(matrix(4:8, 2, 2))
+my_Matrix$get()
+my_Matrix$invGetter()
+cacheinverse(my_Matrix)
 
